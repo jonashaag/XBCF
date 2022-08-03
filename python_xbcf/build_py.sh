@@ -37,7 +37,7 @@ then
   exit 1
 fi
 
-./remove.sh
+./remove.sh || true
 $PYTHON_BIN -m pip uninstall xbcf
 cp -r ../src .
 
