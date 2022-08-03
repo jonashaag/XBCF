@@ -31,7 +31,7 @@ do
 done
 
 echo Building python
-if [[ ! $(command -v "$PYTHON_BIN") ]]
+if ! command -v "$PYTHON_BIN"
 then
   echo "error $PYTHON_BIN not found. Make sure PYTHON_BIN is properly defined"
   exit 1
