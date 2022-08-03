@@ -1,5 +1,4 @@
-
-#! /bin/bash
+#! /bin/bash -e
 PYTHON_BIN=python
 DIST_FLAG=false
 SWIG_FLAG=false
