@@ -30,8 +30,9 @@ jobs:
           cache-env: true
           channels: conda-forge
           extra-specs: |
-            swig
             python=${{ matrix.python-version }}
+            swig
+            numpy
       - name: Build
         run: |
           cd python_xbcf
