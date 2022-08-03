@@ -28,6 +28,7 @@ jobs:
           environment-file: false
           environment-name: build_py
           cache-env: true
+          channels: conda-forge
           extra-specs: |
             swig
             python=${{ matrix.python-version }}
