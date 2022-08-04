@@ -409,7 +409,7 @@ void XBCFcpp::_predict(int n_t, int d_t, double *a_t, int term)
 
     xbcfModel *model = new xbcfModel(this->params.kap_trt, this->params.s_trt, this->params.tau_trt, this->params.alpha_trt, this->params.beta_trt);
 
-    model->predict_std(Xtestpointer, n_t, d_t, this->params.num_trees_trt,
+    model->predict_std(Xtestpointer, n_t, d_t,
                       this->params.num_sweeps, this->tauhats_test_xinfo, this->trees_trt);
 
     delete model;
@@ -426,7 +426,7 @@ void XBCFcpp::_predict(int n_t, int d_t, double *a_t, int term)
 
     xbcfModel *model = new xbcfModel(this->params.kap_pr, this->params.s_pr, this->params.tau_pr, this->params.alpha_pr, this->params.beta_pr);
 
-    model->predict_std(Xtestpointer, n_t, d_t, this->params.num_trees_pr,
+    model->predict_std(Xtestpointer, n_t, d_t,
                       this->params.num_sweeps, this->muhats_test_xinfo, this->trees_pr);
 
     delete model;
