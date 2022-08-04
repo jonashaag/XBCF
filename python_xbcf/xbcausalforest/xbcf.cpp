@@ -342,9 +342,9 @@ void XBCFcpp::_fit(int n_t, int d_t, double *a_t, // treatment
 
   //cout << this->muhats_xinfo.size() << "x" << this->muhats_xinfo[0].size() << endl;
   //cout << muhats_xinfo.size() << "x" << muhats_xinfo[0].size() << endl;
-  model_trt->predict_std(Xpointer_tau, N, p_trt, this->params.num_trees_trt,
+  model_trt->predict_std(Xpointer_tau, N, p_trt,
                          this->params.num_sweeps, this->tauhats_xinfo, this->trees_trt);
-  model_pr->predict_std(Xpointer, N, p_pr, this->params.num_trees_pr,
+  model_pr->predict_std(Xpointer, N, p_pr,
                         this->params.num_sweeps, this->muhats_xinfo, this->trees_pr);
   /*
   cout << "b_vec: " << endl;
